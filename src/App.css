@@ -1,0 +1,200 @@
+.App {
+  text-align: center;
+  padding:30px;
+  width: 357px;
+}
+
+.App-container {
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  flex: 1 0 auto;
+  background: white;
+}
+
+.App-logo {
+  margin-top: 24px;
+  color: #24272a;
+}
+
+.unlock-button {
+  background-color: #0376c9;
+  height:60px;
+  width: 100%;
+  font-weight: 400;
+  border-radius: 100px;
+  margin-top: 20px;
+  color: white;
+  box-shadow: none;
+  
+}
+
+.button {
+  font-size: 0.875rem;
+  font-family: "Euclid Circular B", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 140%;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-disabled {
+  border: 1px solid #d6d9dc;
+}
+
+.btn-enabled {
+  border: 1px solid #24272a;
+  cursor: pointer;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.unlock_links {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.unlock_link {
+  font-size: unset;
+  font-weight: bold;
+}
+
+.btn-link {
+  font-family: "Euclid Circular B", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 140%;
+  font-style: normal;
+  color: #0376c9;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.support {
+  margin-top: 25px;
+  font-size: 0.75rem;
+}
+
+div {
+  margin:0;
+}
+
+.password-input {
+  margin: 56px 0 8px;
+}
+
+* {
+  font-family: "Euclid Circular B", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Euclid Circular B", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 140%;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: 800;
+  color: #535a61;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("../public/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../public/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../public/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../public/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../public/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Roboto Black"), local("Roboto-Black"), url("../public/fonts/Roboto/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/Euclid/EuclidCircularB-Regular-WebXL.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../public/fonts/Euclid/EuclidCircularB-RegularItalic-WebXL.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../public/fonts/Euclid/EuclidCircularB-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../public/fonts/Euclid/EuclidCircularB-Bold-WebXL.ttf") format("truetype");
+}
