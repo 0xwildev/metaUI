@@ -15,7 +15,7 @@ function App() {
   const [isError, setIsError] = useState(false);
   const [isDisabled, setIsDisabled] = useState(true);
   console.log(window.screen.width)
-  const [pos, setPos] = useState({x:window.screen.width/2,y:120});
+  const [pos, setPos] = useState({x:177,y:120});
 
   const handleFocus = () => {
     if(password=='')setInputType('text')
