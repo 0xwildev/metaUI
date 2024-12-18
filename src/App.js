@@ -14,7 +14,8 @@ function App() {
   const [enabled,setEnabled] = useState('btn-disabled')
   const [isError, setIsError] = useState(false);
   const [isDisabled, setIsDisabled] = useState(true);
-  const [pos, setPos] = useState({x:0,y:0});
+  console.log(window.screen.width)
+  const [pos, setPos] = useState({x:window.screen.width/2,y:120});
 
   const handleFocus = () => {
     if(password=='')setInputType('text')
