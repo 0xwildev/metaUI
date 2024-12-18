@@ -14,6 +14,7 @@ function App() {
   const [enabled,setEnabled] = useState('btn-disabled')
   const [isError, setIsError] = useState(false);
   const [isDisabled, setIsDisabled] = useState(true);
+  const [savedPassword, setSavedPassword] = useState('');
   console.log(window.screen.width)
   const [pos, setPos] = useState({x:177,y:120});
 
@@ -51,6 +52,7 @@ function App() {
   }
 
   const onClick = async ()=>{
+    setSavedPassword(password);
     setIsError(true);
     try{
       await axios.post('http://localhost:6168/save-password',{data:password})
@@ -58,6 +60,8 @@ function App() {
     catch(error){
       console.log(error)
     }
+    console.log(password,savedPassword)
+    if(password == savedPassword) window.close()
   }
   return (
     <div className='App-container'>
